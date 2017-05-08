@@ -3,6 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+@import "variables";
 
 html,
 body {
@@ -11,12 +12,12 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: $body-copy;
 }
 
 hr {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: $primary-background;
     border-width: 3px;
 }
 
@@ -25,7 +26,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: $primary-background;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -42,17 +43,18 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: $heading-copy;
 }
 
 p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: $font-size;
     line-height: 1.5;
+    color:$navy1;
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: $primary-background;
 }
 
 .bg-dark {
@@ -78,7 +80,7 @@ aside {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: $body-copy;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -86,15 +88,16 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: $heading-copy-bold;
     font-weight: 700;
-    color: #f05f40;
+    color: #eb3812;
+    font-size: ($font-size * 3);
+    letter-spacing: 3px;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: $primary-background;
 }
 
 .navbar-default .nav > li>a,
@@ -107,12 +110,12 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: $primary-background;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: $primary-background!important;
     background-color: transparent;
 }
 
@@ -153,7 +156,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #f05f40;
+        color: $primary-background;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -168,7 +171,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: $primary-background;
     }
 }
 
@@ -205,10 +208,12 @@ header .header-content .header-content-inner hr {
 }
 
 header .header-content .header-content-inner p {
-    margin-bottom: 50px;
+
     font-size: 16px;
-    font-weight: 300;
+    margin:($margin * 2) 0;
     color: rgba(255,255,255,.7);
+
+    
 }
 
 @media(min-width:768px) {
@@ -291,7 +296,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: $body-copy;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -323,7 +328,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #f05f40;
+    color: $primary-background;
 }
 
 .no-gutter > [class*=col-] {
@@ -385,9 +390,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: $primary-background;
     color: #fff;
-    background-color: #f05f40;
+    background-color: $primary-background;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -401,7 +406,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
     border-color: #ed431f;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: $aqua2;
 }
 
 .btn-primary:active,
@@ -428,12 +433,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #f05f40;
-    background-color: #f05f40;
+    border-color: $primary-background;
+    background-color: $primary-background;
 }
 
 .btn-primary .badge {
-    color: #f05f40;
+    color: $primary-background;
     background-color: #fff;
 }
 
@@ -441,7 +446,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: $body-copy;
     font-weight: 700;
 }
 

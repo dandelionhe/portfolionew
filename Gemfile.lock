@@ -64,6 +64,7 @@ GEM
     erubi (1.6.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    flat-ui-rails (0.0.2)
     frontend-generators (0.2.0)
       rainbow (= 2.0.0)
       turf (= 0.0.5)
@@ -184,6 +185,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13.0)
   coffee-rails (~> 4.2)
+  flat-ui-rails
   frontend-generators
   jbuilder (~> 2.5)
   jquery-rails
