@@ -63,7 +63,10 @@ p {
 }
 
 .text-faded {
-    color: rgba(255,255,255,.7);
+    text-align: left;
+    color:$inverse-text;
+    font-size: $font-size;
+
 }
 
 section {
@@ -213,7 +216,7 @@ header .header-content .header-content-inner p {
     margin:($margin * 2) 0;
     color: rgba(255,255,255,.7);
 
-    
+
 }
 
 @media(min-width:768px) {
@@ -334,6 +337,14 @@ header .header-content .header-content-inner p {
 .no-gutter > [class*=col-] {
     padding-right: 0;
     padding-left: 0;
+}
+
+// contact
+#contact li{
+  margin:($margin * 3) $margin 0;
+  &:hover{
+    transform: scale(1.5);
+  }
 }
 
 .btn-default {
