@@ -4,7 +4,7 @@
 
             <% @projects.each do |project| %>
             <div class="col-lg-4 col-sm-6">
-              <%= link_to project.demo,class: "portfolio-box" do  %>
+              <%= link_to project,class: "portfolio-box" do  %>
               <%= image_tag "creative/portfolio/#{rand(5)+1}.jpg", class: "img-responsive", alt: "" %>
               <div class="portfolio-box-caption">
                   <div class="portfolio-box-caption-content">
